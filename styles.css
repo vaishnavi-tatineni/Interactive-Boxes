@@ -1,0 +1,185 @@
+body {
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 462px;
+    background: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #C8C8C8;
+    border-radius: 8px;
+    /* Rounded corners */
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF6B82;
+    margin-bottom: 20px;
+}
+
+.option {
+    border: 2px solid #FF6B82;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s;
+    background: #FFF9FA;
+    width: 95%;
+    /* Make the option take full width */
+}
+
+.option:hover {
+    border-color: #D7445B;
+    /* Change border color on hover */
+}
+
+.option input {
+    display: inline-block;
+    /* Make radio buttons visible */
+    margin-right: 10px;
+    /* Space between radio button and label */
+}
+ .option input[type="radio"] {
+     accent-color: #FF6B82;
+     border: 2px solid gray;
+     /* Set the radio button color to pink */
+     width: 15px; /* Adjust width for better visibility */
+     height: 15px; /* Adjust height for better visibility */
+     appearance: none; /* Remove default styling */
+     background-color: #FFF; /* Set background color */
+     border-radius: 50%; /* Make it circular */
+     position: relative; /* Position for pseudo-element */
+ }
+
+ .option input[type="radio"]:checked::before {
+     content: '';
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 8px; /* Inner circle size */
+     height: 8px; /* Inner circle size */
+     background-color: #FF6B82; /* Inner circle color */
+     border-radius: 50%; /* Make it circular */
+     transform: translate(-50%, -50%); /* Center the inner circle */
+ }
+.option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.discount {
+    background-color: #FF6B82;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.most-popular {
+    background-color: #FF6B82;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.standard-price {
+    color: gray;
+    font-size: 12px;
+}
+
+.details {
+    display: none;
+    /* Initially hidden */
+    flex-direction: column;
+    margin-top: 10px;
+    width: 60%;
+   
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.details .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    /* Ensure footer takes full width */
+}
+
+.free-delivery {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    color: #FF6B82;
+}
+
+#total {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.add-to-cart {
+    background-color: #FF6B82;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 16px;
+    /* Increase font size */
+    margin-top: 10px;
+    /* Add margin to separate from total */
+}
+
+.powered-by {
+    position: absolute;
+    left: 271px;
+    top: 542px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
