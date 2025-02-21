@@ -21,6 +21,6 @@ This repository contains a simple, interactive webpage designed to showcase a "B
 2. Open `index.html` in your web browser to view the interactive BOGO offer.
 
 ### Live Demo
-- [View the live page here](https://<username>.github.io/<repository-name>/)
+- [View the live page here](https://vaishnavi-tatineni.github.io/Interactive-Boxes/)
 
 
